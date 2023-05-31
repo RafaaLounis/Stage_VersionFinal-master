@@ -1,0 +1,32 @@
+{
+  "name": "electronic",
+  "version": "1.0.0",
+  "description": "The backend for electronic",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "start": "node server/index.js",
+    "app": "concurrently \"npm run start\" \"npm run client\"",
+    "build":"cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YacineZK/Stage_VersionFinal.git"
+  },
+  "author": "Zakat Yacine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YacineZK/Stage_VersionFinal.git"
+  },
+  "homepage": "https://github.com/YacineZK/Stage_VersionFinal.git",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1"
+  }
+}
